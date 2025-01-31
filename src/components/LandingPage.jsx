@@ -2,6 +2,8 @@ import React from 'react';
 
 import Header from './Header';
 
+import { FaInstagram } from 'react-icons/fa'
+
 const PodcastLandingPage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
@@ -9,10 +11,10 @@ const PodcastLandingPage = () => {
       {/* Hero Section */}
       <section className="bg-cover bg-center h-screen flex items-center justify-center text-white" style={{ backgroundImage: "url('hero-background.jpg')" }}>
         <div className="text-center">
-          <h1 className="text-5xl font-bold mb-4">Welcome to the Podcast</h1>
-          <p className="text-xl mb-8">Your weekly dose of inspiration, stories, and insights.</p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-            Listen Now
+          <h1 className="text-5xl font-bold mb-4">Bienvenidos a Viviendo con CUCI</h1>
+          <p className="text-xl mb-8">Un diagnostico con proposito.</p>
+          <button href="https://open.spotify.com/show/7pz2dCEau9MAkxMi8SEbDB" target="_blank" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+            Escuchanos!
           </button>
         </div>
       </section>
@@ -30,18 +32,18 @@ const PodcastLandingPage = () => {
       {/* Featured Episodes Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Episodes</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Episodios</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Episode Card 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img src="episode1.jpg" alt="Episode 1" className="w-full h-48 object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Episode 1: The Journey Begins</h3>
+                <h3 className="text-xl font-semibold mb-2">Episodio 1: Un diagnostico que llego para cambiar mi vida</h3>
                 <p className="text-gray-600 mb-4">
-                  In our very first episode, we discuss the origins of the podcast and what you can expect in the coming weeks.
+                En este episodio quiero compartirte un poco de cómo fue mi diagnóstico, que es una enfermedad crónica y sobre todo quiero darte fuerzas para que no te rindas ante esta enfermedad.
                 </p>
                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
-                  Listen
+                  Escuchar
                 </button>
               </div>
             </div>
@@ -50,12 +52,12 @@ const PodcastLandingPage = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img src="episode2.jpg" alt="Episode 2" className="w-full h-48 object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Episode 2: Overcoming Challenges</h3>
+                <h3 className="text-xl font-semibold mb-2">Episodio 2: ¿Qué es CUCI?</h3>
                 <p className="text-gray-600 mb-4">
-                  This episode features an inspiring interview with a guest who has overcome significant challenges to achieve success.
+                ¿Alguna vez habías escuchado la palabra CUCI? Bueno en este episodio vas a poder entender un poco más de este diagnóstico sus síntomas como detectarlo, a que especialista acercarte e incluso como puedes apoyar a alguien que tiene esta enfermedad.
                 </p>
                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
-                  Listen
+                 Escuchar
                 </button>
               </div>
             </div>
@@ -64,12 +66,13 @@ const PodcastLandingPage = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img src="episode3.jpg" alt="Episode 3" className="w-full h-48 object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Episode 3: The Power of Mindset</h3>
+                <h3 className="text-xl font-semibold mb-2">Episodio 3: Cuando cambiar de tratamiento</h3>
                 <p className="text-gray-600 mb-4">
-                  We dive deep into the importance of mindset and how it can shape your life and career.
+                  ¿Te has preguntado si tu tratamiento es el correcto para ti? ¿Si es momento de buscar otras alternativas?
+                  Bueno en este episodio te voy a platicar un poco de cómo fue mi proceso de cambiar de tratamientos, las dificultades de estos cambios y también los efectos secundarios que presente con algunos medicamentos.
                 </p>
                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
-                  Listen
+                 Escuchar
                 </button>
               </div>
             </div>
@@ -82,12 +85,9 @@ const PodcastLandingPage = () => {
         <div className="container mx-auto px-6 text-center">
           <p>&copy; 2025 Viviendo con CUCI. All rights reserved.</p>
           <div className="mt-4 space-x-4">
-            <a href="https://instagram.com/yourpodcast" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition duration-300">
-              Instagram
-            </a>
-            <a href="https://facebook.com/yourpodcast" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition duration-300">
-              Facebook
-            </a>
+            <div className='flex gap-4 py-4'>
+              <a href="https://www.instagram.com/viviendoconcuci" target='_blank' rel="noreferrer"><div className='p-4 bg-gray-800 rounded-xl'><FaInstagram size={25} style={{color:'#00000'}} /></div></a>
+            </div>
           </div>
         </div>
       </footer>
