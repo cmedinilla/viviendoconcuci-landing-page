@@ -2,9 +2,9 @@ import React from 'react';
 
 import Header from './Header';
 
-import rousita from '../assets/rousita.png'
-
 import { FaInstagram } from 'react-icons/fa'
+
+import rousita from '../assets/rousita.png'
 
 const PodcastLandingPage = () => {
 return (
@@ -20,7 +20,7 @@ return (
         <a href="https://open.spotify.com/show/7pz2dCEau9MAkxMi8SEbDB?si=a063b610e96444c9" target='_blank'
           rel="noreferrer">
           <button
-            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+            className="bg-white hover:bg-gray-300 text-black font-semibold py-3 px-6 rounded-lg transition duration-300">
             Escúchanos!
           </button>
         </a>
